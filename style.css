@@ -1,0 +1,163 @@
+/* finanSheet - CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f7;
+    color: #333;
+}
+
+header {
+    background-color: #0071e3;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #005bb5;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0071e3;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005bb5;
+}
+
+section {
+    padding: 3rem;
+    text-align: center;
+}
+
+.sobre {
+    background: linear-gradient(135deg, #0071e3, #005bb5);
+    color: #fff;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 900px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sobre:hover {
+    transform: scale(1.03);
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #f5f5f7;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* CSS: Destaques e Benefícios */
+.destaques {
+    background-color: #e9f0f5;
+    padding: 3rem;
+    text-align: center;
+}
+
+.benefit-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-card .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: #0071e3;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Fade-In Scroll Animation */
+.fade-in-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+    opacity: 1;
+}
+
+/* CSS: Novo campo de contato */
+#contato {
+    background-color: #e9f0f5;
+    padding: 3rem;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    color: #0071e3;
+}
+
+#contato p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#contato .cta-button {
+    background-color: #ff6699; /* Cor personalizada para o botão */
+    color: #fff;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+#contato .cta-button:hover {
+    background-color: #e60073;
+    color: #fff;
+}
