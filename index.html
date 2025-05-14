@@ -1,33 +1,43 @@
+
 <!-- finanSheet Homepage -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>finanSheet</title>
+    <title>FinanSheet</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao finanSheet</h1>
-        <p>Liberdade financeira começa com um toque.</p>
-        <a href="#destaques" class="cta-button">Saiba Mais</a>
-    </header>
 
-    <section id="sobre" class="sobre">
+<header>
+    <nav class="fixed-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Detalhes</a></li>
+            <li><a href="#destaques">Funcionalidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <h1>Bem-vindo ao FinanSheet</h1>
+    <p>Liberdade financeira começa com um toque.</p>
+    <a href="#destaques" class="cta-button">Saiba Mais</a>
+</header>
+<section class="quem-somos">
+    <div class="quem-somos-header">
         <h2>Quem Somos</h2>
-        <p>Transforme a forma como você cuida do seu dinheiro. Nosso objetivo é empoderar pessoas e empresas com ferramentas simples, eficientes e seguras para o controle financeiro. Com nossa planilha inteligente e, em breve, um aplicativo completo para dispositivos móveis, você terá total controle das suas finanças — quando e onde quiser..</p>
-        <a href="#planilha" class="cta-button">Veja a Planilha em Ação</a>
-    </section>
+    </div>
+    <div class="quem-somos-content">
+        <p>Somos uma equipe dedicada ao desenvolvimento de soluções financeiras para todos os tipos de usuários. Nosso foco é oferecer um controle eficiente e simplificado, adaptado às suas necessidades.</p>
+    </div>
+</section>
 
-    <section id="destaques" class="destaques">
-        <h2>Destaques e Benefícios</h2>
-        <div class="benefit-card fade-in-on-scroll">
-            <div class="icon">💡</div>
-            <h3>Facilidade de uso</h3>
-            <p>Controle financeiro simples, com visual intuitivo.</p>
-        </div>
+<section class="destaques">
+    <div class="destaques-header">
+        <h2>Destaques & Benefícios</h2>
+    </div>
+    <div class="destaques-container">
         <div class="benefit-card fade-in-on-scroll">
             <div class="icon">🔧</div>
             <h3>Personalização</h3>
@@ -43,12 +53,14 @@
             <h3>Seguro e Privado</h3>
             <p>Todos os dados são tratados com total segurança.</p>
         </div>
-    </section>
+        <div class="benefit-card fade-in-on-scroll">
+            <div class="icon">💼</div>
+            <h3>Gestão Profissional</h3>
+            <p>Gestão simplificada para pequenas e grandes empresas.</p>
+        </div>
+    </div>
+</section>
 
-    <section id="planilha">
-        <h2>Veja a Planilha em Ação</h2>
-        <iframe src="https://docs.google.com/spreadsheets/d/1IfoXDEgE0iUYdTo1UCiqmd9SIb0EN3gXd0-Grtmc_M8/edit?gid=1594741871#gid=1594741871" width="100%" height="500px" style="border:none;"></iframe>
-    </section>
 
     <!-- Novo campo de contato direcionado para o Instagram -->
     <section id="contato">
