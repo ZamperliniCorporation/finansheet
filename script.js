@@ -1,3 +1,4 @@
+
 // finanSheet - JavaScript
 window.addEventListener("scroll", () => {
     const elements = document.querySelectorAll('.fade-in-on-scroll');
@@ -27,3 +28,12 @@ benefitCards.forEach(card => {
         card.style.transform = 'scale(1)';
     });
 });
+window.addEventListener("scroll", () => {
+    const menu = document.querySelector(".fixed-menu");
+    if (window.scrollY > 50) {
+        menu.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+    } else {
+        menu.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.1)";
+    }
+});
+
