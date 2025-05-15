@@ -1,12 +1,11 @@
-
 <!-- finanSheet Homepage -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>FinanSheet</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -15,8 +14,9 @@
     <nav class="fixed-menu">
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Detalhes</a></li>
-            <li><a href="#destaques">Funcionalidades</a></li>
+            <li><a href="#detalhes">Detalhes</a></li>
+            <li><a href="#destaques">Destaques</a></li>
+            <li><a href="#planilha-em-acao">Planilha</a></li>  <!-- NOVO ITEM -->
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
@@ -24,16 +24,23 @@
     <p>Liberdade financeira começa com um toque.</p>
     <a href="#destaques" class="cta-button">Saiba Mais</a>
 </header>
-<section class="quem-somos">
-    <div class="quem-somos-header">
-        <h2>Quem Somos</h2>
-    </div>
+
+<section class="quem-somos" id="detalhes">
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80" alt="Equipe trabalhando" />
     <div class="quem-somos-content">
-        <p>Somos uma equipe dedicada ao desenvolvimento de soluções financeiras para todos os tipos de usuários. Nosso foco é oferecer um controle eficiente e simplificado, adaptado às suas necessidades.</p>
+        <div class="quem-somos-header">
+            <h2>Quem Somos</h2>
+        </div>
+        <p>Na FinanSheet, acreditamos que o controle financeiro é a base para uma vida mais livre e tranquila. Nossa equipe é formada por especialistas apaixonados por tecnologia e finanças, unidos com o objetivo de criar soluções acessíveis, seguras e personalizadas para todos.
+
+Desenvolvemos ferramentas que simplificam o dia a dia, seja para quem está começando a organizar as finanças ou para empresas que buscam gestão profissional. Com foco em inovação e usabilidade, queremos empoderar você a tomar decisões financeiras inteligentes e alcançar seus objetivos com confiança.
+
+Nosso compromisso é com a transparência, segurança dos seus dados e suporte contínuo, porque sabemos que o sucesso financeiro é uma jornada — e queremos caminhar ao seu lado.</p>
     </div>
 </section>
 
-<section class="destaques">
+
+<section class="destaques" id="destaques">
     <div class="destaques-header">
         <h2>Destaques & Benefícios</h2>
     </div>
@@ -61,17 +68,31 @@
     </div>
 </section>
 
+<section class="planilha-em-acao" id="planilha-em-acao">
 
-    <!-- Novo campo de contato direcionado para o Instagram -->
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <p>Tem dúvidas? Fale conosco diretamente no Instagram!</p>
-        <a href="https://www.instagram.com/zamp1__?igsh=ZjJubTlsbHNzdnVr&utm_source=qr" class="cta-button" target="_blank">Fale Conosco no Instagram</a>
-    </section>
+    <div class="planilha-header">
+        <h2>Planilha em Ação</h2>
+    </div>
+    <div class="planilha-content">
+        <p>Acompanhe como a finanSheet facilita o controle financeiro diretamente na tela.</p>
+        <iframe src="https://docs.google.com/spreadsheets/d/1IfoXDEgE0iUYdTo1UCiqmd9SIb0EN3gXd0-Grtmc_M8/preview"
+                width="100%"
+                height="600"
+                frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+</section>
 
-    <footer>
-        <p>Email: contato@finansheet.com</p>
-        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
-    </footer>
+<section id="contato">
+    <h2>Entre em Contato</h2>
+    <p>Tem dúvidas? Fale conosco diretamente no Instagram!</p>
+    <a href="https://www.instagram.com/zamp1__?igsh=ZjJubTlsbHNzdnVr&utm_source=qr" class="cta-button" target="_blank" rel="noopener noreferrer">Fale Conosco no Instagram</a>
+</section>
+
+<footer>
+    <p>Email: contato@finansheet.com</p>
+    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+</footer>
+
 </body>
 </html>
