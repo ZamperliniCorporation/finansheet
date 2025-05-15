@@ -101,21 +101,6 @@ footer a:hover {
 }
 
 /* Quem Somos */
-/* Quem Somos */
-.quem-somos {
-    position: relative;
-    padding: 100px 40px; /* espaço interno maior */
-    background-image: url('https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/05/a-importancia-do-controle-financeiros-de-projetos.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    border-radius: 15px;
-    margin: 60px auto;
-    max-width: 1200px;
-    text-align: center;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* sombra para destacar */
-    color: #f0f4f8; /* cor do texto */
-}
 
 .quem-somos {
     position: relative;
