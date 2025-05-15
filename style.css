@@ -1,4 +1,3 @@
-/* finanSheet - CSS */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +6,7 @@ body {
     color: #fff; /* Cor do texto em branco */
 }
 
+/* Header */
 header {
     position: relative;
     background-image: url('https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/05/a-importancia-do-controle-financeiros-de-projetos.jpg');
@@ -20,15 +20,20 @@ header {
     background-attachment: fixed;
 }
 
+header h1, header p {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Sombra no texto do header */
+}
+
 header h1 {
     font-size: 3rem;
-    margin-top: 20vh; /* Dá espaço para o texto ficar mais centralizado */
+    margin-top: 20vh; /* Espaço para centralizar verticalmente */
 }
 
 header p {
     font-size: 1.5rem;
 }
 
+/* Botão CTA */
 .cta-button {
     display: inline-block;
     background-color: #ffd700; /* Dourado */
@@ -45,12 +50,14 @@ header p {
     background-color: #ffcc00; /* Dourado mais claro */
 }
 
+/* Seções gerais */
 section {
     padding: 3rem;
     text-align: center;
 }
 
-.sobre {
+/* Sobre */
+.home
     background: linear-gradient(135deg, #ffd700, #ffcc00); /* Dourado degradê */
     color: #fff;
     padding: 4rem;
@@ -61,24 +68,25 @@ section {
     transition: transform 0.3s ease-in-out;
 }
 
-.sobre:hover {
+.home:hover {
     transform: scale(1.03);
 }
 
-.sobre h2 {
+.home h2 {
     font-size: 2.5rem;
 }
 
-.sobre p {
+.home p {
     font-size: 1.2rem;
 }
 
+/* Footer */
 footer {
-    background-color: #000; /* Fundo preto para o footer */
+    background-color: #000; /* Fundo preto */
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;
-    color: #fff; /* Cor do texto em branco */
+    color: #fff; /* Texto branco */
 }
 
 footer a {
@@ -90,168 +98,63 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-/* Estilo para a seção Quem Somos */
+
+/* Quem Somos */
 .quem-somos {
-    background-color: #f4f4f4; /* Cor de fundo suave */
-    padding: 3rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    animation: fadeInUp 1s ease-out; /* Animação suave de entrada */
-    max-width: 1200px;
-    margin: 0 auto;
+background-color: #111;
+    color: #bfa04d;
+    padding: 40px 20px;
+    border: 2px solid #bfa04d;
+    border-radius: 12px;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.quem-somos-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    flex: 1;
 }
 
 .quem-somos-header h2 {
-    font-size: 3rem;
-    color: #ffd700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
+    color: #ffd700; /* Dourado mais intenso */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Sombra leve para destacar */
     font-weight: bold;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.quem-somos-header h2:hover {
-    transform: scale(1.1); /* Aumenta o título ao passar o mouse */
-    color: #fff;
-}
+
 
 .quem-somos-content p {
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 1.1rem;
     line-height: 1.6;
-    margin: 0 auto;
-    max-width: 800px; /* Limita a largura do texto */
-
-
-}
-
-/* Estilo para a seção de Destaques (Benefícios) */
-.destaques {
-    background-color: #333;
-    padding: 3rem;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeInUp 1s ease-out;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-.destaques-header h2 {
-    font-size: 3rem;
-    color: #ffd700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
-    font-weight: bold;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.destaques-header h2:hover {
-    transform: scale(1.1);
-    color: #fff;
-}
-
-.benefit-card {
-    background: #fff;
-    border-radius: 15px;
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 300px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    flex: 0 0 45%;
-    max-width: 45%;
-}
-
-.benefit-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 255, 255, 0.1));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.benefit-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: #ffd700;
-}
-
-.benefit-card:hover::before {
-    opacity: 1;
-}
-
-.benefit-card .icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease;
-}
-
-.benefit-card h3 {
-    margin: 0.5rem 0;
-    font-size: 1.5rem;
-    color: #ffd700;
-    text-transform: uppercase;
-}
-
-.benefit-card p {
-    font-size: 1rem;
     color: #333;
 }
 
-/* Adicionando animações de entrada para os cards */
-.fade-in-on-scroll {
-    opacity: 0;
-    transition: opacity 1s ease-out, transform 0.5s ease-out;
-}
-
-.fade-in-on-scroll.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Efeito de animação para o ícone ao passar o mouse */
-.benefit-card:hover .icon {
-    transform: rotate(360deg);
-}
-
-/* Animação de fadeInUp */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.quem-somos img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 
+/* Destaques e Benefícios */
 .destaques {
     background-color: #333;
     padding: 3rem;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  /* Alterado para centralizar os itens */
+    justify-content: center; /* Centraliza os itens */
     gap: 2rem;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -259,7 +162,7 @@ footer a:hover {
     margin: 0 auto;
     max-width: 1200px;
 }
-/*Destaques e beneficios*/
+
 .destaques-header h2 {
     font-size: 3rem;
     color: #ffd700;
@@ -282,23 +185,23 @@ footer a:hover {
 .destaques-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  /* Garante que os cards fiquem centralizados */
+    justify-content: center;
     gap: 2rem;
-    margin-top: 2rem;  /* Espaçamento superior para separar do título */
+    margin-top: 2rem;
 }
 
+/* Cards de benefícios */
 .benefit-card {
     background: #fff;
     border-radius: 15px;
     padding: 2rem;
     margin: 1rem auto;
-    max-width: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     text-align: center;
     position: relative;
     overflow: hidden;
-    flex: 0 0 45%;  /* Cada card ocupará 45% da largura */
+    flex: 0 0 45%;
     max-width: 45%;
     opacity: 0;
     transition: opacity 1s ease-out, transform 0.5s ease-out;
@@ -332,6 +235,10 @@ footer a:hover {
     transition: transform 0.3s ease;
 }
 
+.benefit-card:hover .icon {
+    transform: rotate(360deg);
+}
+
 .benefit-card h3 {
     margin: 0.5rem 0;
     font-size: 1.5rem;
@@ -344,16 +251,18 @@ footer a:hover {
     color: #333;
 }
 
+/* Animações de entrada */
+.fade-in-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 0.5s ease-out;
+}
+
 .fade-in-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-.benefit-card:hover .icon {
-    transform: rotate(360deg);
-}
-
-/* Efeito de fade-in */
+/* Animação fadeInUp */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -365,20 +274,7 @@ footer a:hover {
     }
 }
 
-
-
-
-/* Fade-In Scroll Animation */
-.fade-in-on-scroll {
-    opacity: 0;
-    transition: opacity 1s ease-out;
-}
-
-.fade-in-on-scroll.visible {
-    opacity: 1;
-}
-
-/* CSS: Novo campo de contato */
+/* Novo campo de contato */
 #contato {
     background-color: #333; /* Fundo escuro */
     padding: 3rem;
@@ -412,11 +308,12 @@ footer a:hover {
     color: #fff;
 }
 
+/* Menu fixo */
 .fixed-menu {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #000; /* Menu fixo com fundo preto */
+    background-color: #000; /* Fundo preto */
     color: #ffd700; /* Dourado */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -447,6 +344,132 @@ footer a:hover {
     opacity: 0.8;
 }
 
-header h1, header p {
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Aumentei o deslocamento e o desfoque */
+/* Planilha em ação */
+.planilha-em-acao {
+    background-color: #444;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 15px;
+    margin: 3rem auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.planilha-header h2 {
+    font-size: 3rem;
+    color: #ffd700;
+    text-transform: uppercase;
+    margin-bottom: 2rem; /* mesmo espaçamento que no destaque */
+    font-weight: bold;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    text-align: center;
+}
+
+.planilha-header h2:hover {
+    color: #fff;
+    text-shadow: 4px 4px 10px rgba(255, 215, 0, 0.7);
+    transform: scale(1.1);
+}
+
+
+/* Responsividade básica */
+@media screen and (max-width: 768px) {
+.benefit-card {
+flex: 0 0 90%;
+max-width: 90%;
+}
+.destaques {
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+.quem-somos-header h2,
+.destaques-header h2,
+.planilha-header h2 {
+    font-size: 2rem;
+}
+}
+.benefit-card:hover {
+    transform: translateY(-5px) scale(1.05); /* escala e leve subida */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #ffd700;
+}
+<style>
+
+/* Menu Responsivo */
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    color: #ffd700;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.fixed-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.fixed-menu a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Ajustes para Dispositivos Móveis */
+@media screen and (max-width: 768px) {
+    .fixed-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-card {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .quem-somos-header h2,
+    .destaques-header h2,
+    .planilha-header h2 {
+        font-size: 2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+</style>
