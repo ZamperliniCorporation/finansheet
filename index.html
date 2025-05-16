@@ -1,95 +1,129 @@
-<!-- finanSheet Homepage -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FinanShet</title>
-    <link rel="styleesheet" href="style.css" />
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FinanSheet</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-    <nav class="fixed-menu">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#detalhes">Detalhes</a></li>
-            <li><a href="#destaques">Destaques</a></li>
-            <li><a href="#planilha-em-acao">Planilha</a></li>  <!-- NOVO ITEM -->
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+  <header>
+    <nav class="menu">
+      <div class="logo">FinanSheet</div>
+      <ul class="menu-list">
+        <li><a href="#" class="menu-link">Início</a></li>
+        <li><a href="#" class="menu-link">Quem Somos</a></li>
+        <li><a href="#" class="menu-link">Serviços</a></li>
+        <li><a href="#planilhas" class="menu-link">Planilha</a></li>
+        <li><a href="#" class="menu-link">Contato</a></li>
+      </ul>
     </nav>
-    <h1>Bem-vindo ao FinanSheet</h1>
-    <p>Liberdade financeira começa com um toque.</p>
-    <a href="#destaques" class="cta-button">Saiba Mais</a>
-</header>
-    <div class="quem-somos-content">
-        <div class="quem-somos-header">
-            <h2>Quem Somos</h2>
-        </div>
-        <p>Na FinanSheet, acreditamos que o controle financeiro é a base para uma vida mais livre e tranquila. Nossa equipe é formada por especialistas apaixonados por tecnologia e finanças, unidos com o objetivo de criar soluções acessíveis, seguras e personalizadas para todos.
+  </header>
 
-Desenvolvemos ferramentas que simplificam o dia a dia, seja para quem está começando a organizar as finanças ou para empresas que buscam gestão profissional. Com foco em inovação e usabilidade, queremos empoderar você a tomar decisões financeiras inteligentes e alcançar seus objetivos com confiança.
+  <section class="hero">
+    <h1 class="site-title">FinanSheet</h1>
+  </section>
 
-Nosso compromisso é com a transparência, segurança dos seus dados e suporte contínuo, porque sabemos que o sucesso financeiro é uma jornada — e queremos caminhar ao seu lado.</p>
+  <section class="quem-somos">
+  <div class="bloco bloco-1 fade-in">
+    <div class="texto">
+      <h2>Quem Somos</h2>
+      <p>Na FinanSheet, acreditamos que o controle financeiro é a base para conquistar estabilidade e liberdade reais.</p>
     </div>
+    <div class="imagem"></div>
+  </div>
+
+  <div class="bloco bloco-2 fade-in">
+    <div class="texto">
+      <p>Nossa missão é criar uma plataforma inteligente que simplifique e organize a gestão do seu dinheiro, seja você um iniciante ou uma empresa buscando soluções práticas.</p>
+    </div>
+    <div class="imagem"></div>
+  </div>
+
+  <div class="bloco bloco-3 fade-in">
+    <div class="texto">
+      <p>Desenvolvemos ferramentas intuitivas, seguras e personalizadas para se encaixar no seu estilo de vida ou perfil do seu negócio, garantindo uma experiência ágil e acessível.</p>
+      <p>Nosso compromisso é com a transparência, a proteção dos seus dados e um suporte dedicado para que você avance com confiança. Na FinanSheet, acompanhamos você em cada passo da sua jornada rumo ao sucesso financeiro.</p>
+    </div>
+    <div class="imagem"></div>
+  </div>
 </section>
 
-
-<section class="destaques" id="destaques">
-    <div class="destaques-header">
-        <h2>Destaques & Benefícios</h2>
-    </div>
-    <div class="destaques-container">
-        <div class="benefit-card fade-in-on-scroll">
-            <div class="icon">🔧</div>
-            <h3>Personalização</h3>
-            <p>Ajuste de acordo com suas necessidades financeiras.</p>
-        </div>
-        <div class="benefit-card fade-in-on-scroll">
-            <div class="icon">📱</div>
+  
+  <div class="servicos">
+    <h2>Serviços</h2>
+    <div class="servicos-container">
+      <button id="btn-prev">‹</button>
+      <div class="servicos-content">
+        <div>
+          <div class="servico-item">
             <h3>Aplicativo em Desenvolvimento</h3>
             <p>Em breve, você poderá acessar tudo pelo seu celular!</p>
-        </div>
-        <div class="benefit-card fade-in-on-scroll">
-            <div class="icon">🔒</div>
+          </div>
+          <div class="servico-item">
             <h3>Seguro e Privado</h3>
             <p>Todos os dados são tratados com total segurança.</p>
-        </div>
-        <div class="benefit-card fade-in-on-scroll">
-            <div class="icon">💼</div>
+          </div>
+          <div class="servico-item">
             <h3>Gestão Profissional</h3>
             <p>Gestão simplificada para pequenas e grandes empresas.</p>
+          </div>
+          <div class="servico-item">
+            <h3>Personalização</h3>
+            <p>Ajuste de acordo com suas necessidades financeiras.</p>
+          </div>
         </div>
+      </div>
+      <button id="btn-next">›</button>
     </div>
+  </div>
+
+  <section class="planilhas" id="planilhas">
+    <br>
+    <h2>Planilhas</h2>
+    <p>Veja a planilha em ação.</p>
+    <br>
+    <div class="planilha-container">
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7AtHEJweb-Rpup6zRTf6DJ7d3Y4HXeRf969_qzMNc9e44zQRd4-jgfrRTBtqSo-xuxDNdEzgvglzh/pubhtml?widget=true&headers=false" 
+          width="100%" height="600" frameborder="0"></iframe>
+</div>
+
+  </section>
+  
+  <section class="funcionalidades reveal">
+  <h2>Funcionalidades</h2>
+  <p>
+    A finanSheet é uma planilha de controle financeiro desenvolvida para ajudar pessoas e empresas a organizarem suas finanças de maneira simples e eficiente. Ela permite o registro detalhado de receitas, despesas, contas a pagar e a receber, além de controlar saldos e fluxos de caixa em tempo real. Com uma interface intuitiva, a finanSheet facilita a visualização do saldo disponível, o acompanhamento dos pagamentos futuros e a gestão dos parcelamentos, garantindo mais controle e planejamento financeiro para o usuário.
+  </p>
+  <p>
+    Entre suas funcionalidades, a finanSheet oferece campos específicos para lançar valores de recebimentos, descontos, vales-refeição, parcelamentos de dívidas e contas fixas, tudo isso estruturado para que o usuário tenha uma visão completa e clara do seu orçamento mensal. Além disso, a planilha pode ser atualizada facilmente, permitindo adaptações conforme as necessidades do usuário, tornando-se uma ferramenta robusta para o gerenciamento financeiro pessoal ou corporativo, com foco em praticidade e organização.
+  </p>
 </section>
 
-<section class="planilha-em-acao" id="planilha-em-acao">
-
-    <div class="planilha-header">
-        <h2>Planilha em Ação</h2>
-    </div>
-    <div class="planilha-content">
-        <p>Acompanhe como a finanSheet facilita o controle financeiro diretamente na tela.</p>
-        <iframe src="https://docs.google.com/spreadsheets/d/1IfoXDEgE0iUYdTo1UCiqmd9SIb0EN3gXd0-Grtmc_M8/preview"
-                width="100%"
-                height="600"
-                frameborder="0"
-                allowfullscreen></iframe>
-    </div>
-</section>
-
-<section id="contato">
+  
+  
+  <footer id="contato" class="contato-footer">
+  <div class="container">
     <h2>Entre em Contato</h2>
     <p>Tem dúvidas? Fale conosco diretamente no Instagram!</p>
-    <a href="https://www.instagram.com/zamp1__?igsh=ZjJubTlsbHNzdnVr&utm_source=qr" class="cta-button" target="_blank" rel="noopener noreferrer">Fale Conosco no Instagram</a>
-</section>
-
-<footer>
-    <p>Email: contato@finansheet.com</p>
-    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    <a href="https://www.instagram.com/zamp1__?igsh=ZjJubTlsbHNzdnVr&utm_source=qr" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-instagram" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M7.75 2C4.65 2 2 4.65 2 7.75v8.5C2 19.35 4.65 22 7.75 22h8.5c3.1 0 5.75-2.65 5.75-5.75v-8.5C22 4.65 19.35 2 16.25 2h-8.5zm0 2h8.5c1.5 0 2.75 1.25 2.75 2.75v8.5c0 1.5-1.25 2.75-2.75 2.75h-8.5c-1.5 0-2.75-1.25-2.75-2.75v-8.5c0-1.5 1.25-2.75 2.75-2.75zm4.25 3.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm0 2a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm3.25-.75a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0z"/>
+      </svg>
+      @zamp1__
+    </a>
+  </div>
 </footer>
-  
+
+<footer class="footer-fixo">
+  <p>Email: <a href="mailto:contato@finansheet.com">contato@finansheet.com</a></p>
+  <p>
+    <a href="#">Política de Privacidade</a> | 
+    <a href="#">Termos de Uso</a>
+  </p>
+</footer>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
